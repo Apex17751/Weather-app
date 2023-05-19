@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-image{
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.bg-image::before{
+  background-image: url('Images/sunset.jpg');
+  position: fixed;
+  content: '';
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+.search{
+
+}
+.top{
+  padding-top: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.input{
+  padding: 18px 20px;
+  border: none;
+  color: #fff;
+  margin: auto;
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  font-weight: bold;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+}
+.search{
+  color: #fff;
+  margin: auto;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2)
+}
+.div-search{
+  margin-left: 15px;
+}
+::placeholder{
+  color: #fff;
+  font-weight: bold;
+}
+.input:visited{
+  border: 1px solid #fff;
+}
+.city{
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-evenly;
+}
+.town{
+  line-height: 50px;
+}
+.cloud{
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.cloud p{
+  padding-right: 10px;
+}
+.miam{
+  font-size: 20px;
+  font-weight: bold;
+}
+.town p{
+  color: #fff;
+}
+.town h1{
+  color: #fff;
+}
+@media (min-width: 1000px) {
+  .city{
+    display: flex;
+  }
+  
+}
+
+.down{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: auto;
+  border-radius: 20px;
+}
+@media (min-width: 1000px) {
+  .down{
+    transform: translateY(130px);
+    max-width: 40%;
+    margin: auto;
+  }
+  
+}
+.weat{
+  padding-right: 50px;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.weats{
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.fahr{
+  font-weight: bold;
+  font-size: 20px;
+}
+.fahrp{
+  font-size: 18px;
+}
+.snow{
+  color: #f3b409;
+  display: none;
+}
+.flex p{
+  padding-right: 5px;
+}
+@media (max-width: 1000px) {
+  .input{
+    margin-top: 40px;
+  }
+  .city{
+    transform: translateX(80px);
+  }
+  .down{
+    margin: 30px 20px;
+    padding: 0px 15px;
+  }
+  .fahr{
+    padding-bottom: 5px;
+  }
+  *{
+    overflow-x: hidden;
+  }
+}
+@media (max-width: 400px) {
+  .flex{
+    display: block;
+    align-items: center;
+  }
+  
+}
+@media (min-width: 400px) {
+  .flex{
+    display: flex;
+    align-items: center;
+  }
+  
+}
+@media (max-width: 700px) {
+  .div-search{
+    padding-top: 35px;
+    font-size: 16px;
+  }
+  .search{
+    padding: 12px 14px;
+  }
+  .town h1{
+    font-size: 50px;
+  }
+  
+}
+@media (max-width: 500px) {
+ .miam{
+  font-size: 18px;
+ }
+ .cloud p{
+  font-size: 18px;
+ }
+ .fahrp {
+  font-size: 17px;
+ }
+  
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .div-search{
+    padding-top: 35px;
+  }
+ 
+  
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+ .down{
+  max-width: 70%;
+  margin: auto;
+  transform: translateY(30px);
+ }
+  
+}
+@media (min-width: 700px) {
+  .div-search{
+    font-size: 18px;
+  }
+  .search{
+    padding: 17px 20px;
+  }
+  .town h1{
+    font-size: 70px;
+  }
+  .input{
+    font-size: 20px;
+  }
+  .fahrp{
+    font-size: 20px;
+  }
+
+  
+}
